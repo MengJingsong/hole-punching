@@ -71,5 +71,5 @@ class Server:
 
 
 if __name__ == '__main__':
-    server = Server('127.0.0.1', 5005)
+    server = Server(*addr_from_args(sys.argv))
     server.action()
