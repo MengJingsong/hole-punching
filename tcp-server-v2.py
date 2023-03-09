@@ -68,6 +68,8 @@ class Server:
                                                         peer_pri_addr,
                                                         peer_pub_addr))
                     self.clients.pop(pair0)
+                    if len(self.clients) == 0:
+                        print('all connections are paired')
 
 
 if __name__ == '__main__':
